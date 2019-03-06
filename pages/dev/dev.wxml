@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='sub-container'>
+  <view class='block'>
+    <view class="section section-line">
+      <view class="title">设备SN码</view>
+      <view class='input-container'>
+      <input class="text" maxlength="10" placeholder="请输入或扫描设备SN码"/>
+      <view class="icon"  bindtap="scanSnCode"></view>
+      </view>
+    </view>
+    <view class="section">
+      <view class="title">电梯注册码</view>
+      <view class='input-container'>
+      <input class="text" maxlength="10" placeholder="请输入或扫描电梯注册码"/>
+      <view class="icon" bindtap="scanRegCode"></view>   
+      </view> 
+    </view>
+  </view>
+
+  <view class='block'>
+    <view class="section section-line">
+      <view class="title">安装地址</view>
+      <view class='input-container'>
+      <view class="text">{{elvAddress}}</view>
+      </view>
+    </view>
+
+     <view class="section section-line">
+      <view class="title">使用单位</view>
+      <view class='input-container'>
+      <view class="text">xx</view>
+      </view>
+    </view>
+
+     <view class="section section-line">
+      <view class="title">电梯品牌</view>
+      <view class='input-container'>
+      <view class="text">xx</view>
+      </view>
+    </view>
+
+     <view class="section">
+      <view class="title">电梯型号</view>
+      <view class='input-container'>
+      <view class="text">xx</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class='btn-view'>
+    <button bindtap="next">下一步</button>
+  </view>
+  
+</view>

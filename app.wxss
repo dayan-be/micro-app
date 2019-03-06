@@ -1,0 +1,22 @@
+/**app.wxss**/
+
+page{
+  height: 100%;
+}
+.container {
+  background-color: #f6f8f9;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* background: #f6f8f8; */
+  font-family: PingFangSC-medium;
+} 
+swiper{
+  height: 100%;
+}
+image{
+  width: 100%;
+}

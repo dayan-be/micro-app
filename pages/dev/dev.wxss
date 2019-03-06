@@ -1,0 +1,62 @@
+view {
+  font-size: 0.7rem;
+}
+.container{
+  background: #e7edf2;
+}
+.sub-container{
+  width: 100%;
+}
+.block{
+  background: #fff;
+  margin: 30rpx 0 0;
+  width: 100%;
+}
+.section{
+  padding: 20rpx 0;
+  margin: 0 40rpx;
+}
+.section::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.section-line{
+  border-bottom: 1px solid #f1f1f1;
+}
+.title{
+  float: left;
+  margin: auto 20px auto 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.input-container{
+  float: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.text {
+  float:left;
+  text-align: right;
+  color: #999999;
+}
+.icon{
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB0PSIxNTM0OTU1MzQ1NTY0IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE2NzEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTkyOCA1NDQgOTYgNTQ0Yy0xNy42NjQgMC0zMi0xNC4zMzYtMzItMzJzMTQuMzM2LTMyIDMyLTMybDgzMiAwYzE3LjY5NiAwIDMyIDE0LjMzNiAzMiAzMlM5NDUuNjk2IDU0NCA5MjggNTQ0ek04MzIgOTI4bC0xOTIgMGMtMTcuNjk2IDAtMzItMTQuMzA0LTMyLTMyczE0LjMwNC0zMiAzMi0zMmwxOTIgMGMxNy42NjQgMCAzMi0xNC4zMzYgMzItMzJsMC0xNjBjMC0xNy42OTYgMTQuMzA0LTMyIDMyLTMyczMyIDE0LjMwNCAzMiAzMmwwIDE2MEM5MjggODg0LjkyOCA4ODQuOTI4IDkyOCA4MzIgOTI4ek0zNTIgOTI4IDE5MiA5MjhjLTUyLjkyOCAwLTk2LTQzLjA3Mi05Ni05NmwwLTE2MGMwLTE3LjY5NiAxNC4zMzYtMzIgMzItMzJzMzIgMTQuMzA0IDMyIDMybDAgMTYwYzAgMTcuNjY0IDE0LjM2OCAzMiAzMiAzMmwxNjAgMGMxNy42NjQgMCAzMiAxNC4zMDQgMzIgMzJTMzY5LjY2NCA5MjggMzUyIDkyOHpNMTI4IDM4NGMtMTcuNjY0IDAtMzItMTQuMzM2LTMyLTMyTDk2IDE5MmMwLTUyLjkyOCA0My4wNzItOTYgOTYtOTZsMTYwIDBjMTcuNjY0IDAgMzIgMTQuMzM2IDMyIDMycy0xNC4zMzYgMzItMzIgMzJMMTkyIDE2MEMxNzQuMzY4IDE2MCAxNjAgMTc0LjM2OCAxNjAgMTkybDAgMTYwQzE2MCAzNjkuNjY0IDE0NS42NjQgMzg0IDEyOCAzODR6TTg5NiAzODRjLTE3LjY5NiAwLTMyLTE0LjMzNi0zMi0zMkw4NjQgMTkyYzAtMTcuNjMyLTE0LjMzNi0zMi0zMi0zMmwtMTkyIDBjLTE3LjY5NiAwLTMyLTE0LjMzNi0zMi0zMnMxNC4zMDQtMzIgMzItMzJsMTkyIDBjNTIuOTI4IDAgOTYgNDMuMDcyIDk2IDk2bDAgMTYwQzkyOCAzNjkuNjY0IDkxMy42OTYgMzg0IDg5NiAzODR6IiBwLWlkPSIxNjcyIiBmaWxsPSIjNzc3Nzc3Ij48L3BhdGg+PC9zdmc+");
+  margin-left: 20rpx;
+  float: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  width: 1.4rem;
+  background-size: 1.4rem 1.4rem;
+}
+.btn-view{
+  width: 100%;
+  border-radio: 0;
+  margin-bottom: 100px;
+}
+button{
+  border-radius: 0;
+  border: none;
+  background: #009bff;
+  color: #fff;
+}

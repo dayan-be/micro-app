@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='sub-container'>
+  <view class='block'>
+    <view class="section section-line">
+      <view class="title">最底层</view>
+      <view class='input-container'>
+      <input class="text" bindinput="updateMinFloor" maxlength="3" placeholder="请输入最低楼层数字编号"/>
+      </view>
+    </view>
+    <view class="section">
+      <view class="title">最高层</view>
+      <view class='input-container'>
+      <input class="text" bindinput="updateMaxFloor" maxlength="3" placeholder="请输入最高楼层数字编号"/>  
+      </view> 
+    </view>
+  </view>
+
+  <view class='block'>
+    <view class='sub-block'>
+    <view class='floor-block'>
+      <view bindtap='toggleDisable' class='floor' wx:for="{{floors}}" wx:key="*this" wx:for-item="f">
+        <input bindinput="bindKeyInput" value="{{f}}"/>
+      </view>
+    </view>
+    </view>
+  </view>
+  </view>
+  <view class='btn-view'>
+    <button class="bind" bindtap="next">绑定</button>
+  </view>
+  
+</view>

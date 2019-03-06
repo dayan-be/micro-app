@@ -1,0 +1,225 @@
+/**index.wxss**/
+.header{
+  width: 100%;
+  margin-top: 15px;
+}
+.hello{
+  font-size: 24px;
+  width: 100%;
+}
+.hello .text{
+  text-align: left;
+}
+.community{
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  /* color: #CDB9AD; */
+}
+.community .switch-link{
+  margin-left: 30px;
+  font-size: 14px;
+  color: #CDB9AD;
+}
+.banner{
+  margin-top: 15px;
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  /* box-shadow:0px 4px 10px 0px rgba(255,124,18,0.2); */
+}
+.banner swiper image{
+  border-radius: 10px;
+  height: 100%;
+}
+.tips{
+  margin-top: 10px;
+  background: #623C25;
+  color: #fff;
+  border-radius: 20px;
+  padding: 9px 18px;
+  font-size: 15px;
+}
+.function-btns-group{
+  width: 100%;
+  margin: 0 10px;
+  padding: 30px 0 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  
+  /* justify-content: flex-start; */
+  /* flex-wrap: wrap; */
+}
+.border{
+  width: 100%;
+  height: 2px;
+}
+.function-btns-group .item{
+  width: 80px;
+  text-align: center;
+  /* border: 1px solid #eee; */
+  margin: 0 5px;
+  padding: 0 5px;
+  /* box-shadow:0px 4px 10px 0px rgba(255,124,18,0.2); */
+}
+.function-btns-group .icon{
+  height: 30px;
+}
+.function-btns-group image{
+  width: 30px;
+  height: 30px;
+}
+.function-btns-group text{
+  /* margin-top: 8px; */
+  color: #333333;
+  font-size: 12px;
+  font-family: PingFangSC-Light;
+  font-weight: 300;
+  line-height: 10px;
+}
+
+.notice{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin: 10px 10px; */
+  /* border: 1px solid #eeeeee; */
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.notice .frame-left{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.notice .title{
+  width: 30px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-size:14px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:22px;
+  border-right: 1px solid #eeeeee;
+}
+.notice .notice-content{
+  padding: 10px;
+  line-height: 22px;
+  font-size:14px;
+  font-family:PingFangSC-Light;
+  font-weight: 300;
+  color: #333333;
+  text-align: left;
+}
+.notice .frame-right{
+  padding: 10px;
+  line-height: 40px;
+  color: #333333;
+  font-family:PingFangSC-Light;
+}
+
+.sun-property{
+  margin: 20px 0;
+  width: 100%;
+  /* border: 1px solid #eeeeee; */
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.sun-property .header{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.sun-property .header .icon{
+  width: 32px;
+  height: 32px;
+  /* line-height: 28px; */
+}
+.sun-property .header image{
+  width: 100%;
+  height: 100%;
+}
+.sun-property .header .text{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  line-height: 32px;
+}
+.sun-property .header .title{
+  font-size:20px;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  line-height:12px;
+}
+.sun-property .header .sub-title{
+  margin-left: 10px;
+  font-size:12px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(205,185,173,1);
+  line-height:14px;
+}
+
+.sun-property .body{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sun-property .body .item{
+  border-radius:10px;
+  width: 108px;
+  padding: 10px;
+  margin: 10px 8px 30px;
+  display: inline-block;
+}
+.sun-property .body .finance-item{
+  background:rgba(250,217,174,1);
+  box-shadow:0px 8px 8px 0px rgba(223,136,22,0.2);
+}
+
+.sun-property .body .team-item{
+  background:rgba(246,193,178,1);
+  box-shadow:0px 8px 8px 0px rgba(221,76,35,0.2);
+}
+
+.sun-property .body .fix-item{
+  background:rgba(216,197,236,1);
+  box-shadow:0px 8px 8px 0px rgba(151,70,237,0.2);
+}
+
+.sun-property .item .title{
+  font-size:16px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  line-height:22px;
+}
+.sun-property .item .desc{
+  font-size:12px;
+  font-family:PingFangSC-Light;
+  font-weight:300;
+  line-height:17px;
+}
+.sun-property .item .value{
+  font-size:30px;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  line-height:42px;
+  margin: 10px 0 20px;
+}
+.sun-property .finance-item .text{
+  color:rgba(177,130,69,1);
+}
+.sun-property .team-item .text{
+  color:rgba(156,100,84,1);
+}
+.sun-property .fix-item .text{
+  color:rgba(119,98,141,1);
+}

@@ -1,0 +1,82 @@
+view {
+  font-size: 0.7rem;
+}
+.container{
+  background: #e7edf2;
+}
+.sub-container{
+  width: 100%;
+}
+.block{
+  background: #fff;
+  margin: 30rpx 0 0;
+  width: 100%;
+}
+.sub-block{
+  padding: 30rpx;
+}
+.sub-block::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.edit{
+  margin-left: 10rpx;
+  color: #00d0a4;
+}
+
+.section{
+  padding: 20rpx 0;
+  margin: 0 40rpx;
+}
+.section::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.section-line{
+  border-bottom: 1px solid #f1f1f1;
+}
+.title{
+  float: left;
+  margin: auto 20px auto 0;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.input-container{
+  float: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.text {
+  float:left;
+  text-align: right;
+  color: #999999;
+}
+.icon{
+  margin-left: 20rpx;
+  float: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+}
+.btn-view{
+  width: 100%;
+  border-radio: 0;
+  margin-bottom: 100px;
+}
+.bind{
+  border-radius: 0;
+  border: none;
+  background: #009bff;
+  color: #fff;
+}
+.floor{
+  width: calc(25% - 44rpx);
+  background: #00d0a4;
+  margin: 10rpx;
+  float: left;
+  font-size: 0.7rem;
+  padding: 6px;
+  color: #fff;
+  text-align: center;
+}
