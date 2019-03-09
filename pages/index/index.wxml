@@ -1,252 +1,256 @@
 <!--index.wxml-->
 <scroll-view scroll-y scroll-with-animation>
-<view class="container">
-  <view class='header'>
-    <!-- <view class='hello'>
+  <view class="container">
+    <view class='header'>
+      <!-- <view class='hello'>
       
       <open-data type="userNickName"></open-data>
       <text class='text'>，早上好</text>
     </view> -->
-    <view class='community'>
-      <text class='text'>佳兆业第二期</text>
+      <view class='community'>
+        <text class='text'>佳兆业第二期</text>
 
-      <text class="switch-link">切换</text>
-    </view>
-  </view>
-
-  <view class='banner'>
-    <swiper
-      indicator-dots="{{indicatorDots}}"
-      autoplay="{{autoplay}}"
-      interval="{{interval}}"
-      duration="{{duration}}"
-    >
-      <block wx:for="{{imgUrls}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" width="375" height="150" />
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
-
-  <view class='function-btns-group'>
-    <view class='item'>
-    <view class='icon'>
-        <image src='/images/pay.png' width='30' height='30'/>
+        <text class="switch-link">切换</text>
       </view>
-    <text>缴费</text>
     </view>
-    <view class='item'>
-    <view class='icon'>
-        <image src='/images/suggest.png' width='30' height='30'/>
-      </view>
-    <text>报修</text>
-    </view>
-    <view class='item'>
-    <view class='icon'>
-        <image src='/images/bill.png' width='30' height='30'/>
-      </view>
-    <text>房屋账单</text>
-    </view>
-    <view class='item'>
-    <view class='icon'>
-        <image src='/images/suggest.png' width='30' height='30'/>
-      </view>
-    <text>投诉与建议</text>
-    </view>
-  </view>
 
-  <view class='border'></view>
+    <view class='notify'>
+      <view class="content">您有最新的议案信息 3 条</view>
+      <view class="close">X</view>
+    </view>
 
-  <!-- <view class='tips'>
+    <view class='banner'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="375" height="150" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='function-btns-group'>
+      <view class='item'>
+        <view class='icon'>
+          <image src='/images/pay.png' width='30' height='30' />
+        </view>
+        <text>缴费</text>
+      </view>
+      <view class='item'>
+        <view class='icon'>
+          <image src='/images/suggest.png' width='30' height='30' />
+        </view>
+        <text>报修</text>
+      </view>
+      <view class='item'>
+        <view class='icon'>
+          <image src='/images/bill.png' width='30' height='30' />
+        </view>
+        <text>房屋账单</text>
+      </view>
+      <view class='item'>
+        <view class='icon'>
+          <image src='/images/suggest.png' width='30' height='30' />
+        </view>
+        <text>投诉与建议</text>
+      </view>
+    </view>
+
+    <view class='border'></view>
+
+    <!-- <view class='tips'>
     <text>有新的议案提醒 {{tipsNum}} 条</text>
   </view> -->
 
-  <view class='notice'>
-    <view class='frame-left'>
-      <view class='title'>
-        小区公告
+    <view class='notice'>
+      <view class='frame-left'>
+        <view class='title'>
+          小区公告
+        </view>
+        <view class='notice-content empty-notice'>
+          查看往期小区公告
+        </view>
       </view>
-      <view class='notice-content empty-notice'>
-        查看往期小区公告
+      <view class='frame-right'>
+        <image src='/images/arrow.png'></image>
       </view>
     </view>
-    <view class='frame-right'>
-      <image src='/images/arrow.png'></image>
-    </view>
-  </view>
 
-  <view class='common-block sun-property'>
-    <view class='header'>
-      <view class='icon'>
-        <image src='/images/house.png'></image>
-      </view>
-      <view class='text'>
-        <text class='title'>
+    <view class='common-block sun-property'>
+      <view class='header'>
+        <view class='icon'>
+          <image src='/images/house.png'></image>
+        </view>
+        <view class='text'>
+          <text class='title'>
           阳光物业
         </text>
-        <text class='sub-title'>
+          <text class='sub-title'>
         物业服务一目了然
         </text>
+        </view>
       </view>
+
+      <scroll-view class='body' scroll-x>
+        <view class='item finance-item'>
+          <view class='title text'>小区总经费</view>
+          <view class='desc text'>小区物业金额/ 元</view>
+          <view class='value text'>40093</view>
+          <view class='btn'>查看详情</view>
+        </view>
+        <view class='item team-item'>
+          <view class='title text'>服务团队</view>
+          <view class='desc text'>服务满意度/ 分</view>
+          <view class='value text'>4.7</view>
+          <view class='btn'>查看详情</view>
+        </view>
+        <view class='item fix-item last-item'>
+          <view class='title text'>设备维修</view>
+          <view class='desc text'>完成维保/ 台</view>
+          <view class='value text'>40093</view>
+          <view class='btn'>查看详情</view>
+        </view>
+      </scroll-view>
     </view>
 
-    <scroll-view class='body' scroll-x>
-      <view class='item finance-item'>
-        <view class='title text'>小区总经费</view>
-        <view class='desc text'>小区物业金额/ 元</view>
-        <view class='value text'>40093</view>
-        <view class='btn'>查看详情</view>
-      </view>
-      <view class='item team-item'>
-        <view class='title text'>服务团队</view>
-        <view class='desc text'>服务满意度/ 分</view>
-        <view class='value text'>4.7</view>
-        <view class='btn'>查看详情</view>
-      </view>
-      <view class='item fix-item last-item'>
-        <view class='title text'>设备维修</view>
-        <view class='desc text'>完成维保/ 台</view>
-        <view class='value text'>40093</view>
-        <view class='btn'>查看详情</view>
-      </view>
-    </scroll-view>
-  </view>
-
-  <view class='common-block protocal'>
-    <view class='header'>
-      <view class='icon'>
-        <image src='/images/transaction.png'></image>
-      </view>
-      <view class='text'>
-        <text class='title'>
+    <view class='common-block protocal'>
+      <view class='header'>
+        <view class='icon'>
+          <image src='/images/transaction.png'></image>
+        </view>
+        <view class='text'>
+          <text class='title'>
           小区事务
         </text>
-        <text class='sub-title'>
+          <text class='sub-title'>
         积极参与小区建设，建设美好社区
         </text>
-      </view>
-    </view>
-
-    <scroll-view class='body' scroll-x>
-      <view class='item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区第一届业委会成员选举</view>
-            <view class='endtime text'>截止时间: 2019/04/23</view>
-            <view class='btn'><view class='text'>去投票</view></view>
-          </view>
         </view>
       </view>
-       <view class='item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区第一届业委会成员选举</view>
-            <view class='endtime text'>截止时间: 2019/04/23</view>
-            <view class='btn'>
-            <view class='text'>去投票</view>
+
+      <scroll-view class='body' scroll-x>
+        <view class='item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区第一届业委会成员选举</view>
+              <view class='endtime text'>截止时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>去投票</view>
+              </view>
             </view>
           </view>
         </view>
-      </view>
-       <view class='item last-item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区第一届业委会成员选举</view>
-            <view class='endtime text'>截止时间: 2019/04/23</view>
-            <view class='btn'>
-              <view class='text'>去投票</view>
+        <view class='item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区第一届业委会成员选举</view>
+              <view class='endtime text'>截止时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>去投票</view>
+              </view>
             </view>
           </view>
         </view>
-      </view>
-    </scroll-view>
+        <view class='item last-item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区第一届业委会成员选举</view>
+              <view class='endtime text'>截止时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>去投票</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
 
-    <view class='footer'>
-    查看小区往期事务
+      <view class='footer'>
+        查看小区往期事务
+      </view>
     </view>
-  </view>
 
 
-  <view class='common-block rule'>
-    <view class='header'>
-      <view class='icon'>
-        <image src='/images/rule.png'></image>
-      </view>
-      <view class='text'>
-        <text class='title'>
+    <view class='common-block rule'>
+      <view class='header'>
+        <view class='icon'>
+          <image src='/images/rule.png'></image>
+        </view>
+        <view class='text'>
+          <text class='title'>
           小区公约
         </text>
-        <text class='sub-title'>
+          <text class='sub-title'>
         小区管理规定，从我做起
         </text>
-      </view>
-    </view>
-
-    <scroll-view class='body' scroll-x>
-      <view class='item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区停车管理规定</view>
-            <view class='endtime text'>生效时间: 2019/04/23</view>
-            <view class='btn'><view class='text'>关注</view></view>
-          </view>
         </view>
       </view>
-       <view class='item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区第一届业委会成员选举</view>
-            <view class='endtime text'>截止时间: 2019/04/23</view>
-            <view class='btn'>
-            <view class='text'>去投票</view>
+
+      <scroll-view class='body' scroll-x>
+        <view class='item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区停车管理规定</view>
+              <view class='endtime text'>生效时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>关注</view>
+              </view>
             </view>
           </view>
         </view>
-      </view>
-       <view class='item last-item'>
-        <view class='sub-frame'>
-          <view class='date-frame'>
-            <view class='date'>1</view>
-            <view class='month'>十一月</view>
-          </view>
-          <view class='content'>
-            <view class='title text'>小区第一届业委会成员选举</view>
-            <view class='endtime text'>截止时间: 2019/04/23</view>
-            <view class='btn'>
-              <view class='text'>去投票</view>
+        <view class='item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区第一届业委会成员选举</view>
+              <view class='endtime text'>截止时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>去投票</view>
+              </view>
             </view>
           </view>
         </view>
+        <view class='item last-item'>
+          <view class='sub-frame'>
+            <view class='date-frame'>
+              <view class='date'>1</view>
+              <view class='month'>十一月</view>
+            </view>
+            <view class='content'>
+              <view class='title text'>小区第一届业委会成员选举</view>
+              <view class='endtime text'>截止时间: 2019/04/23</view>
+              <view class='btn'>
+                <view class='text'>去投票</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+
+      <view class='footer'>
+        查看小区往期事务
       </view>
-    </scroll-view>
-
-    <view class='footer'>
-    查看小区往期事务
     </view>
-  </view>
 
-  <view class='slogan'>
-  -大雁当家- 为社区权益而生</view>
+    <view class='slogan'>
+      -大雁当家- 为社区权益而生</view>
   </view>
 </scroll-view>
