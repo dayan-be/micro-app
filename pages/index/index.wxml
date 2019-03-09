@@ -67,14 +67,16 @@
       <view class='title'>
         小区公告
       </view>
-      <view class='notice-content'>
+      <view class='notice-content empty-notice'>
         查看往期小区公告
       </view>
     </view>
-    <view class='frame-right'>></view>
+    <view class='frame-right'>
+      <image src='/images/arrow.png'></image>
+    </view>
   </view>
 
-  <view class='sun-property'>
+  <view class='common-block sun-property'>
     <view class='header'>
       <view class='icon'>
         <image src='/images/house.png'></image>
@@ -102,7 +104,7 @@
         <view class='value text'>4.7</view>
         <view class='btn'>查看详情</view>
       </view>
-      <view class='item fix-item'>
+      <view class='item fix-item last-item'>
         <view class='title text'>设备维修</view>
         <view class='desc text'>完成维保/ 台</view>
         <view class='value text'>40093</view>
@@ -110,5 +112,141 @@
       </view>
     </scroll-view>
   </view>
+
+  <view class='common-block protocal'>
+    <view class='header'>
+      <view class='icon'>
+        <image src='/images/transaction.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>
+          小区事务
+        </text>
+        <text class='sub-title'>
+        积极参与小区建设，建设美好社区
+        </text>
+      </view>
+    </view>
+
+    <scroll-view class='body' scroll-x>
+      <view class='item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区第一届业委会成员选举</view>
+            <view class='endtime text'>截止时间: 2019/04/23</view>
+            <view class='btn'><view class='text'>去投票</view></view>
+          </view>
+        </view>
+      </view>
+       <view class='item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区第一届业委会成员选举</view>
+            <view class='endtime text'>截止时间: 2019/04/23</view>
+            <view class='btn'>
+            <view class='text'>去投票</view>
+            </view>
+          </view>
+        </view>
+      </view>
+       <view class='item last-item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区第一届业委会成员选举</view>
+            <view class='endtime text'>截止时间: 2019/04/23</view>
+            <view class='btn'>
+              <view class='text'>去投票</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class='footer'>
+    查看小区往期事务
+    </view>
+  </view>
+
+
+  <view class='common-block rule'>
+    <view class='header'>
+      <view class='icon'>
+        <image src='/images/rule.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>
+          小区公约
+        </text>
+        <text class='sub-title'>
+        小区管理规定，从我做起
+        </text>
+      </view>
+    </view>
+
+    <scroll-view class='body' scroll-x>
+      <view class='item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区停车管理规定</view>
+            <view class='endtime text'>生效时间: 2019/04/23</view>
+            <view class='btn'><view class='text'>关注</view></view>
+          </view>
+        </view>
+      </view>
+       <view class='item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区第一届业委会成员选举</view>
+            <view class='endtime text'>截止时间: 2019/04/23</view>
+            <view class='btn'>
+            <view class='text'>去投票</view>
+            </view>
+          </view>
+        </view>
+      </view>
+       <view class='item last-item'>
+        <view class='sub-frame'>
+          <view class='date-frame'>
+            <view class='date'>1</view>
+            <view class='month'>十一月</view>
+          </view>
+          <view class='content'>
+            <view class='title text'>小区第一届业委会成员选举</view>
+            <view class='endtime text'>截止时间: 2019/04/23</view>
+            <view class='btn'>
+              <view class='text'>去投票</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class='footer'>
+    查看小区往期事务
+    </view>
+  </view>
+
+  <view class='slogan'>
+  -大雁当家- 为社区权益而生</view>
   </view>
 </scroll-view>
