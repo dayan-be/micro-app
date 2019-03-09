@@ -64,12 +64,8 @@
 
     <view class='notice'>
       <view class='frame-left'>
-        <view class='title'>
-          小区公告
-        </view>
-        <view class='notice-content empty-notice'>
-          查看往期小区公告
-        </view>
+        <view class='title'>小区公告 </view>
+        <view class='notice-content empty-notice'>查看往期小区公告</view>
       </view>
       <view class='frame-right'>
         <image src='/images/arrow.png'></image>
@@ -82,12 +78,8 @@
           <image src='/images/house.png'></image>
         </view>
         <view class='text'>
-          <text class='title'>
-          阳光物业
-        </text>
-          <text class='sub-title'>
-        物业服务一目了然
-        </text>
+          <text class='title'>阳光物业</text>
+          <text class='sub-title'>物业服务一目了然</text>
         </view>
       </view>
 
@@ -119,12 +111,8 @@
           <image src='/images/transaction.png'></image>
         </view>
         <view class='text'>
-          <text class='title'>
-          小区事务
-        </text>
-          <text class='sub-title'>
-        积极参与小区建设，建设美好社区
-        </text>
+          <text class='title'>小区事务</text>
+          <text class='sub-title'>积极参与小区建设，建设美好社区</text>
         </view>
       </view>
 
@@ -176,9 +164,7 @@
         </view>
       </scroll-view>
 
-      <view class='footer'>
-        查看小区往期事务
-      </view>
+      <view class='footer'>查看小区往期事务</view>
     </view>
 
 
@@ -188,12 +174,8 @@
           <image src='/images/rule.png'></image>
         </view>
         <view class='text'>
-          <text class='title'>
-          小区公约
-        </text>
-          <text class='sub-title'>
-        小区管理规定，从我做起
-        </text>
+          <text class='title'>小区公约</text>
+          <text class='sub-title'>小区管理规定，从我做起</text>
         </view>
       </view>
 
@@ -245,12 +227,9 @@
         </view>
       </scroll-view>
 
-      <view class='footer'>
-        查看小区往期事务
-      </view>
+      <view class='footer'>查看小区往期事务</view>
     </view>
 
-    <view class='slogan'>
-      -大雁当家- 为社区权益而生</view>
+    <view class='slogan'>-大雁当家- 为社区权益而生</view>
   </view>
 </scroll-view>
